@@ -1,0 +1,214 @@
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ================= BACKGROUNDS ================= */
+
+.body-home {
+    background-image: url('images/background-01-port.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-meals {
+    background-image: url('images/background-02-port.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ================= CUSTOM CHECKBOXES ================= */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 25px;
+}
+
+/* unchecked */
+input[type="checkbox"] + label::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f0c8"; /* empty square */
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* checked */
+input[type="checkbox"]:checked + label::before {
+    font-weight: 900;
+    content: "\f14a"; /* checked square */
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    background-color: #2196f3;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img {
+    width: 150px;
+}
+
+/* ================= PAGE CONTAINER ================= */
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* ================= HOME PAGE ================= */
+
+#home-logo-img {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    padding: 25px 0 10px 0;
+}
+
+#home-logo-text {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0 25px 0;
+}
+
+/* ================= HOME MENU ================= */
+
+.home-menu-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+
+    border: 5px solid #ffffff;
+    display: block;
+
+    width: 80%;
+    margin: 0 auto 15px auto;
+    padding: 10px;
+}
+
+/* ================= MEALS PAGE ================= */
+
+#meals {
+    padding-top: 70px;
+}
+
+.meals-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meals-list a {
+    text-decoration: none;
+    width: 100%;
+    max-width: 600px;
+}
+
+.meals-list-item {
+    border: 5px solid #1a1a1a;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.meals-list-item h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.meals-list-item i {
+    float: right;
+    color: #1a1a1a;
+}
+
+.meals-list-item p {
+    font-size: 15px;
+    font-style: italic;
+    color: #4d4d4d;
+    margin: 5px 0 0 0;
+}
+
+/* ================= RECIPE PAGE ================= */
+
+#recipe {
+    padding-top: 70px;
+}
+
+/* ================= RECIPE DETAILS ================= */
+
+.recipe-details {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.recipe-details img {
+    width: 100%;
+    display: block;
+}
+
+.recipe-details h1 {
+    font-size: 25px;
+    text-align: center;
+    border: 5px solid #1a1a1a;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.recipe-details-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe-details-info p {
+    font-size: 13px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.recipe-details-ingredients label {
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.recipe-details-steps {
+    padding-top: 20px;
+}
+
+.recipe-details-steps ol {
+    padding-left: 28px;
+}
